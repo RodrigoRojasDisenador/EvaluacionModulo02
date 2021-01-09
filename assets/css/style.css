@@ -1,0 +1,231 @@
+*{
+    margin: 0px;
+    padding: 5px;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: 'Allan', cursive;
+    font-family: 'Arvo', serif;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+.padre{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+
+    .header{
+    background: url(../img/head.jpg);
+    background-position: top;
+    background-attachment: contain;
+    background-size: cover;
+    display: flex;
+    flex-flow: column nowrap;
+    
+    }
+
+        .portada{
+            height: 250px;
+            display: flex;
+            flex-flow: column ;
+            align-items: center;
+            text-align: center;
+            
+        
+
+        }
+        .portada h1{
+       
+            color: rgb(255, 255, 255);
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            
+      
+
+        }
+        .portada h3{  
+            color: rgb(255, 255, 255);
+            text-align: center;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+
+        }
+        
+        .menu{
+            background-color: black;
+            display: flex;
+            flex-flow: row nowrap;
+            height: 30px;
+            width: 100%;
+            align-items: center;
+
+            
+            }
+                .nav1{
+                      flex: 9 1 auto;
+                      }
+                      .nav1 a{
+                          color: rgb(255, 255, 255);
+                          font-size: 11px;
+                          text-transform: uppercase;
+                          padding: 0 2px;
+                          letter-spacing: 2px;
+
+                      }
+                      .nav1 a:hover{
+                          color: rgb(122, 122, 122);
+                      }
+                .nav2{
+        
+                flex: 1 1 auto;
+                
+                }
+                .nav2 a{
+                    color: rgb(255, 255, 255);
+                    font-size: 11px;
+                    text-transform: uppercase;
+                    padding: 0 2px;
+                    letter-spacing: 2px;
+
+                }
+                .nav2 a:hover{
+                    color: rgb(122, 122, 122);
+                }
+
+    .section{
+    background: rgb(0, 0, 0);
+    display: flex;
+    }
+
+        .articulos{
+            background: rgb(247, 247, 247);
+            flex: 3 1 auto;
+            display: flex;
+            flex-flow: row wrap;
+        }
+            .article{
+                background: rgb(255, 255, 255);
+                flex: 1 1 80%;
+            }
+            .article img {
+                width: 100%;   
+            }
+            .article a {
+                color: rgb(255, 255, 255);
+                font-size: 12px;
+                padding: 5px;
+                background: black;
+                margin: 5px 0;
+                display: inline-block;
+            }
+            .article a:hover {
+                background: rgb(122, 122, 122);
+            }
+
+        .aside{
+            background: rgb(0, 0, 0);
+            display: flex;
+            flex-flow: column nowrap;
+            flex: 1 1 auto;
+            color: rgb(255, 255, 255);
+        }
+            .about img{
+                width: 100%;                                
+            }
+            
+            
+            .galeria img{
+                width: 100%;   
+            }
+
+    .footer{
+    background: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    flex-flow: column ;
+    
+   
+    }
+        .pie{
+            align-items: center;
+            text-align: center;
+        }
+        .pie h6 {
+            font-size: 8px;
+            color: rgb(255, 255, 255);
+            letter-spacing: 5px;
+            text-transform: uppercase;
+
+        }
+        .nav3 {
+            align-items: center;
+            text-align: center;
+        }
+
+        .nav3 a{
+
+            color: rgb(255, 255, 255);
+            font-size: 11px;
+            text-transform: uppercase;
+            padding: 0 2px;
+            letter-spacing: 2px;
+
+        }
+        .nav3 a:hover{
+            color: rgb(122, 122, 122);
+        }
+        
+
+
+@media all and (max-width: 1100px){
+            .articulos{
+                flex: 3 1.2 auto;
+        
+            }
+        
+        }
+
+
+@media all and (max-width: 600px){
+    .section{
+        flex-direction: column;
+
+    }
+    
+    .portada{
+        height: 200px;
+    }
+    .off {display: none;}
+
+    .menu{
+
+        height: 40px;
+
+    }
+    .nav1 a{
+        font-size: 25px;
+ 
+    }
+    .nav2 a{
+        font-size: 25px;
+    }
+
+}
+
+@media all and (max-width: 430px){
+    .section{
+        flex-direction: column;
+
+    }
+    
+
+}
